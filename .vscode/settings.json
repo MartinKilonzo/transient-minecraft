@@ -1,5 +1,8 @@
 {
   "restructuredtext.confPath": "",
   "python.formatting.provider": "black",
-  "editor.rulers": [88]
+  "editor.rulers": [
+    88
+  ],
+  "python.pythonPath": "/usr/local/bin/python3"
 }

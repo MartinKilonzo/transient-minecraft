@@ -57,8 +57,8 @@ class Server:
             process.wait()
         finally:
             print("Minecraft server stopped.")
-            self.cloud.put_save(self._minecraft_path)
-            self.cloud.kill_instance()
+            # self.cloud.put_save(self._minecraft_path)
+            # self.cloud.kill_instance()
 
     def _create_minecraft_path(self) -> None:
         """

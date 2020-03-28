@@ -242,7 +242,7 @@ class GCloud(Cloud):
         zipped_save_file = tempfile.NamedTemporaryFile(delete=False)
         zipped_save_file.close()
         latest_blob.download_to_filename(zipped_save_file.name)
-        print(f"Downloaded save: {latest_blob.name}")
+        print(f"Downloaded save: {latest_blob.name} to {zipped_save_file}")
 
     def put_save(self, local_path: str) -> None:
         bucket = self.storage_client.bucket(os.environ["GCLOUD_BUCKET"])
